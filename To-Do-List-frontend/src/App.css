@@ -1,0 +1,296 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  --color-131921: #9091a7;
+  --color-3b4149: #3b4149;
+  --color-febd69: #9fa4d8;
+  --color-232f3e: rgb(103, 150, 161);
+  --color-bf4500: #bf4500;
+  --color-f5f5f7:  rgb(220, 233, 245);
+  --color-ededed: #ededed;
+  --color-777777: #777777;
+  --color-bf4800: #bf4800;
+  --color-1c1c1b: #1c1c1b;
+  --color-201e4c: #201e4c;
+
+}
+.errors{
+  color: red !important;
+  font-size: 12px !important;
+}
+.section-heading{
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.card-wrapper{
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 15px;
+}
+body{
+  font-family: "Rubik",sans-serif;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+.from-control:focus{
+  box-shadow: none;
+  border-color: inherit;
+}
+
+
+.gap-10{
+  gap: 10px;
+}
+
+.gap-15{
+  gap: 15px;
+}
+.gap-30{
+  gap: 30px;
+}
+.button{
+  background-color: var(--color-201e4c);
+  color: white;
+  font-size: 14px;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+.button:hover{
+  background-color: var(--color-febd69);
+  color: #131821;
+}
+
+/* Header part */
+
+
+
+.header-bottom{
+  background-color: var(--color-232f3e);
+  padding: 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.nav-button{
+  color: white;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.nav-button:hover{
+  color: black;
+  box-shadow: inset rgba(0, 0, 0, 1) 0px 0px 10px 0px, inset rgba(0, 0, 0, 1) 0px 0px 10px 0px, inset rgba(0, 0, 0, 1) 0px 0px 8px -24px;  
+  background-color: rgb(217, 225, 255);
+}
+.logout{
+  border:0px;
+  background-color: var(--color-232f3e);
+  font-size: 20px;
+  font-family: "Rubik",sans-serif;
+}
+
+.profile{
+  background-color: rgb(217, 225, 255);
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgb(111, 146, 176) ;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.profile:hover{
+  box-shadow: inset rgba(0, 0, 0, 1) 0px 0px 5px 0px, inset rgba(0, 0, 0, 1) 0px 0px 5px 0px, inset rgba(0, 0, 0, 1) 0px 0px 4px -24px;  
+}
+/* Header part ends here */
+
+/* footer part */
+
+footer{
+  background-color: var(--color-232f3e);
+}
+footer:not(:first-child){
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+footer .input-group-text{
+  background-color: var(--color-232f3e);
+  color: white;
+  padding: 8px 17px;
+  
+}
+
+/* footer part ends here */
+/* home wrapper-2 */
+.home-wrapper-2{
+  background-color: var(--color-f5f5f7);
+}
+.content{
+  background-color: var(--color-f5f5f7);
+}
+/* home wrapper-2 ends here */
+
+/* auth card */
+.auth-card{
+  padding: 33px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+.auth-card h3{
+  font-size: 19px;
+  font-weight: 500; 
+  color: var(--color-777777);
+
+}
+.auth-card .form-control{
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: transparent;
+
+}
+.auth-card a{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+
+.auth-card p{
+  font-size: 13px;
+  color: var(--color-777777);
+}
+/* auth card ends here */
+
+
+
+/* Logout */
+
+.signup{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+.signup:hover{
+  background-color: var(--color-131921);
+  color: white;
+}
+
+/* Home */
+.home-heading{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  color: rgb(12,121,107);
+}
+.hd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.horizontal-divider{
+  border: 2px solid rgb(183, 205, 225) ;
+  width: 90%;
+  margin: 50px;
+  border-radius: 5px;
+}
+
+/* Add Button */
+.add-button{
+  border: 5px solid rgb(111, 146, 176) ;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.add-button:hover{
+  box-shadow: inset rgba(0, 0, 0, 1) 0px 0px 10px 0px, inset rgba(0, 0, 0, 1) 0px 0px 10px 0px, inset rgba(0, 0, 0, 1) 0px 0px 8px -24px;  
+  background-color: rgb(217, 225, 255);
+}
+.add-button img{
+  width: 50px;
+}
+.add-container{
+  padding-left:100px;
+}
+
+/* Add Button ends here */
+
+/* Task-list */
+.task-list{
+  padding-bottom: 100px;
+}
+
+/* List Heading */
+
+.list-container{
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.title{
+  font-size: 15px;
+  color: rgb(162, 162, 190);
+  display: flex;
+  justify-content: center;
+}
+.task-list-item{
+  padding: 10px;
+  border: 4px solid rgb(111, 146, 176) ;
+  border-radius: 10px;
+}
+/* List Heading ends here */
+
+/* Tasks */
+
+.divider{
+  border: 2px solid rgb(111, 146, 176) ;
+  height: 50px;
+}
+
+.update-button{
+  border: 2px solid rgb(111, 146, 176) ;
+  padding: 5px;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  margin-left: 15px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.update-button:hover{
+  box-shadow: inset rgba(0, 0, 0, 1) 0px 0px 10px 0px, inset rgba(0, 0, 0, 1) 0px 0px 10px 0px, inset rgba(0, 0, 0, 1) 0px 0px 8px -24px;  
+  background-color: rgb(217, 225, 255);
+}
+
+.title-content{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.update{
+  border:2px solid white;
+  padding: 5px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+/* Tasks ends here */
