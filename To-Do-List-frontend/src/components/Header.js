@@ -27,7 +27,7 @@ const Header = () => {
                         Home
                       </NavLink>
                       <NavLink className="nav-button" to="/login">
-                        LoginUp
+                        Login
                       </NavLink>
                       <NavLink className="nav-button" to="/signup">
                         Signup
