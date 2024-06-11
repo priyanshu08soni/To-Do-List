@@ -8,9 +8,9 @@
   --color-131921: #9091a7;
   --color-3b4149: #3b4149;
   --color-febd69: #9fa4d8;
-  --color-232f3e: rgb(103, 150, 161);
+  --color-232f3e: #00694a;
   --color-bf4500: #bf4500;
-  --color-f5f5f7:  rgb(220, 233, 245);
+  --color-f5f5f7:  rgb(0,43,39);
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-bf4800: #bf4800;
@@ -70,7 +70,13 @@ a{
 
 /* Header part */
 
-
+.logo img{
+  width: 80px;
+  border-radius: 30px;
+  margin-right: 10px;
+  border: 2px solid greenyellow;
+  margin-left: -70px;
+}
 
 .header-bottom{
   background-color: var(--color-232f3e);
@@ -142,6 +148,8 @@ footer .input-group-text{
 }
 .content{
   background-color: var(--color-f5f5f7);
+  border-radius: 200px;
+  margin: 50px;
 }
 /* home wrapper-2 ends here */
 
@@ -159,11 +167,14 @@ footer .input-group-text{
   color: var(--color-777777);
 
 }
+.profile-heading{
+  color:#dbffdb ;
+}
 .auth-card .form-control{
   height: 50px;
-  background-color: var(--color-f5f5f7);
   color: var(--color-777777);
   font-size: 14px;
+  background-color: #d6d8f6;
   border-radius: 10px;
   border-color: transparent;
 
@@ -231,6 +242,13 @@ footer .input-group-text{
 }
 .add-container{
   padding-left:100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tree{
+  width:280px;
+  margin-right: 80px;
 }
 
 /* Add Button ends here */
@@ -256,6 +274,7 @@ footer .input-group-text{
 .task-list-item{
   padding: 10px;
   border: 4px solid rgb(111, 146, 176) ;
+  background-color: #f1fff1;
   border-radius: 10px;
 }
 /* List Heading ends here */

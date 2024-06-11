@@ -7,7 +7,7 @@ import * as yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
 import { updateUser } from "../features/user/userSlice";
 import { FiEdit } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
+
 const profileSchema = yup.object({
   firstname: yup.string().required("First Name is Required"),
   lastname: yup.string().required("Last Name is Required"),
@@ -54,7 +54,7 @@ const Profile = () => {
               className="d-flex gap-30 align-items-center"
               style={{ cursor: "pointer" }}
             >
-              <h3 className="my-3">Update Profile</h3>
+              <h3 className="my-3 profile-heading">Update Profile</h3>
               <FiEdit
                 className="fs-3 text-warning "
                 onClick={() => {

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import image from "../assets/Task logo.jpg"
 import "react-bootstrap-typeahead/css/Typeahead.css";
 const Header = () => {
   const navigate=useNavigate();
@@ -23,6 +24,9 @@ const Header = () => {
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-5">
                     <div>
+                      <NavLink className="logo">
+                        <img src={image} alt="" />
+                      </NavLink>
                       <NavLink className="nav-button" to="/">
                         Home
                       </NavLink>

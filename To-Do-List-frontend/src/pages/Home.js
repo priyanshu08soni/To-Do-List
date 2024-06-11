@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import Meta from "../components/Meta";
 import image from "../assets/sign.png";
 import moment from "moment";
+import { FiEdit } from "react-icons/fi";
+import image2 from "../assets/tasktree.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteTask, getAllTasks } from "../features/task/taskSlice";
@@ -40,7 +42,9 @@ const Home = () => {
     <>
       <Meta title="To-Do-List App" />
       <div className="content">
-        <h1 className="home-heading">To-Do-List (CRUD)</h1>
+        <h1 className="home-heading">
+          <FiEdit className="fs-1 mx-3 text-warning "/>
+          To-Do-List (CRUD)</h1>
         <div className="hd">
           <div className="horizontal-divider"></div>
         </div>
@@ -48,13 +52,14 @@ const Home = () => {
           <button className="add-button" onClick={()=>navigate("/task")}>
             <img src={image} alt="" />
           </button>
+          <img className="tree" src={image2} alt="" />
         </div>
         <div className="hd">
           <div className="horizontal-divider"></div>
         </div>
         <div className="task-list">
           <div className="list-container">
-            <div className="d-flex bg-white align-items-center task-list-item">
+            <div className="d-flex align-items-center task-list-item">
               <div className="w-25">
                 <div className="title">Title</div>
               </div>
@@ -83,7 +88,7 @@ const Home = () => {
             taskState?.map((item, index) => {
               return (
                 <div className="list-container" key={index}>
-                  <div className="d-flex bg-white align-items-center task-list-item">
+                  <div className="d-flex align-items-center task-list-item">
                     <div className="w-25">
                       <div className="title-content">
                         {item?.title}
